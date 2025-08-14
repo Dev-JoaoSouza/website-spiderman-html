@@ -1,0 +1,15 @@
+.gallery {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.gallery li a img {
+    width: 230px;
+    height: 150px;
+    border: solid 6px var(--secundary-color);
+    border-radius: 15px;
+    object-fit: cover;
+}

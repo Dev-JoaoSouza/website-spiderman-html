@@ -1,0 +1,17 @@
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pills li {
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.pills li:last-of-type {
+    text-transform: lowercase;
+}

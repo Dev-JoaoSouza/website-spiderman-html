@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man | Multiversos</title>
+    <link rel="shortcut icon" href="src/assets/favicon/spider.ico" type="image/x-icon">
+
+    <!-- SEO -->
+    <meta name="author" content="João Dev">
+    <meta name="description" content="Site interativo do Multiverso Spider-Man desenvolvido com HTML, CSS e JavaScript. Explore carrosséis animados, informações sobre cada filme e uma galeria de imagens com Fancybox.">
+    <meta name="keywords" content="Spider-Man, multiverso, Tobey Maguire, Andrew Garfield, Tom Holland, Miles Morales, carrossel animado, galeria de imagens, HTML, CSS, JavaScript, Fancybox, site responsivo, animações em CSS">
+    <meta name="robots" content="index, follow">
+
+    <!-- protocolo Open Graph -->
+    <meta property="og:title" content="Multiverso Spider-Man | Projeto Interativo em HTML, CSS e JavaScript">
+    <meta property="og:description" content="Descubra o Multiverso Spider-Man com carrosséis animados, páginas de filmes detalhadas e galeria de imagens em um site totalmente responsivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="src/assets/tela.png">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="src/styles/home-page-styles.css">
+</head>
+<body>
+    <header>
+        <nav class="s-menu">
+            <ul>
+                <li class="s-menu__item">
+                    <a href="pages/tobey-maguire/spiderman1-1.html">Tobey Maguire</a>
+                    <a href="pages/andrew-garfield/spiderman2-1.html">AndreW Garfield</a>
+                </li>
+    
+                <li class="s-menu__item s-menu__icon">
+                    <img src="src/assets/icons/spider.svg" alt="Spider-Man Multiverse logo">
+                </li>
+                
+                <li class="s-menu__item">
+                    <a href="pages/tom-holland/spiderman3-1.html">Tom Holland</a>
+                    <a href="pages/miles-morales/spiderman4-1.html">Miles Morales</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="s-container">
+            <div class="s-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+                <a href="pages/tobey-maguire/spiderman1-1.html" class="s-card">
+                    <img class="s-card__background" src="src/assets/pic-sm-bg-01.jpg" alt="Cidade do Tobey Maguire">
+                    <img class="s-card__image" src="src/assets/spider-man-01.png" alt="Spider-Man Tobey Maguire">
+                    <h2 class="s-card__title">Tobey Maguire</h2>
+                </a>
+
+                <a href="pages/andrew-garfield/spiderman2-1.html" class="s-card">
+                    <img class="s-card__background" src="src/assets/pic-sm-bg-02.jpg" alt="Cidade do Andrew Garfield">
+                    <img class="s-card__image" src="src/assets/spider-man-02.png" alt="Spider-Man Andrew Garfield">
+                    <h2 class="s-card__title">AndreW Garfield</h2>
+                </a>
+
+                <a href="pages/tom-holland/spiderman3-1.html" class="s-card">
+                    <img class="s-card__background" src="src/assets/pic-sm-bg-03.jpg" alt="Cidade do Tom Holland">
+                    <img class="s-card__image" src="src/assets/spider-man-03.png" alt="Spider-Man Tom Holland">
+                    <h2 class="s-card__title">Tom Holland</h2>
+                </a>
+
+                <a href="pages/miles-morales/spiderman4-1.html" class="s-card">
+                    <img class="s-card__background" src="src/assets/pic-sm-bg-04.jpg" alt="Cidade do Miles Morales">
+                    <img class="s-card__image" src="src/assets/spider-man-04.png" alt="Spider-Man Miles Morales">
+                    <h2 class="s-card__title">Miles Morales</h2>
+                </a>
+            </div>
+        </section>
+
+        <nav class="s-controller">
+            <div id="1" onclick="selectCarouselItem(this)" class="s-controller__button s-controller__button--active">01</div>
+            <div id="2" onclick="selectCarouselItem(this)" class="s-controller__button">02</div>
+            <div id="3" onclick="selectCarouselItem(this)" class="s-controller__button">03</div>
+            <div id="4" onclick="selectCarouselItem(this)" class="s-controller__button">04</div>
+            <div class="s-controller__line"></div>
+        </nav>
+    </main>
+
+    <footer>
+        <hr>
+        <a href="https://www.linkedin.com/in/joaosouza-dev/" target="_blank">linkedin</a>
+        <a href="https://github.com/Dev-JoaoSouza/" target="_blank">github</a>
+        <p>João Dev 2024-2025</p>
+    </footer>
+
+    <script src="src/script/script.js"></script>
+</body>
+</html>

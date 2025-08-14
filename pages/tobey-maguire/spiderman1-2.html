@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man | Tobey Maguire</title>
+    <link rel="shortcut icon" href="../../src/assets/favicon/spider.ico" type="image/x-icon">
+
+    <!-- SEO -->
+    <meta name="author" content="João Dev">
+    <meta name="description" content="Site interativo do Multiverso Spider-Man desenvolvido com HTML, CSS e JavaScript. Explore carrosséis animados, informações sobre cada filme e uma galeria de imagens com Fancybox.">
+    <meta name="keywords" content="Spider-Man, multiverso, Tobey Maguire, Andrew Garfield, Tom Holland, Miles Morales, carrossel animado, galeria de imagens, HTML, CSS, JavaScript, Fancybox, site responsivo, animações em CSS">
+    <meta name="robots" content="index, follow">
+
+    <!-- protocolo Open Graph -->
+    <meta property="og:title" content="Multiverso Spider-Man | Projeto Interativo em HTML, CSS e JavaScript">
+    <meta property="og:description" content="Descubra o Multiverso Spider-Man com carrosséis animados, páginas de filmes detalhadas e galeria de imagens em um site totalmente responsivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../assets/tela.png">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Framework Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../../src/styles/internal.css">
+</head>
+<body class="s-spiderman-01-02">
+    <main>
+        <aside class="s-left-column">
+            <nav class="navigator">
+                <a class="navigator__icon" href="../../index.html">
+                    <img src="../../src/assets/icons/spider-tobey.png" alt="Icone do spider-man 1">
+                </a>
+    
+                <ul>
+                    <li><a href="spiderman1-1.html">01</a></li>
+                    <li><a href="#" class="active">02</a></li>
+                    <li><a href="spiderman1-3.html">03</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <section class="s-main-content">
+            <div class="s-main-content__top">
+                <div class="s-logo">
+                    <img src="../../src/assets/spiderman-tobey/movie-02/logo.png" alt="Spiderman (2004)" title="Spiderman (2004)">
+                </div>
+
+                <div class="s-description">
+                    <ul class="pills">
+                        <li>Ano: 2004</li>
+                        <li>Diretor: Sam Raimi</li>
+                        <li>Duração: 2h 7m</li>
+                    </ul>
+
+                    <div class="s-description__text">
+                        <p>
+                            <strong>Sinopse:</strong>&nbsp;O Dr. Otto Octavius é transformado em Doutor Octopus quando
+                            uma falha em uma experiência de fusão nuclear resulta em uma explosão que mata sua esposa.
+                            Ele culpa o Homem-Aranha pelo acidente e deseja vingança. Enquanto isso, o alter ego do
+                            herói, Peter Parker, perde seus poderes. Para complicar as coisas, o seu melhor amigo odeia
+                            o Homem-Aranha e sua amada fica noiva.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="s-link">
+                    <a href="https://www.youtube.com/watch?v=3jBFwltrxJw&ab_channel=SonyPicsatHome" class="link-button" target="_blank">
+                        <span class="icon">
+                            <div class="play-icon">&nbsp;</div>
+                        </span>
+                        <span class="label">
+                            Assistir trailer
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="s-main-content__bottom">
+                <ul class="gallery">
+                    <li>
+                        <a data-fancybox="gallery" href="../../src/assets/spiderman-tobey/movie-02/gallery/image-01-full.png">
+                            <img src="../../src/assets/spiderman-tobey/movie-02/gallery/image-01.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a data-fancybox="gallery" href="../../src/assets/spiderman-tobey/movie-02/gallery/image-02-full.png">
+                            <img src="../../src/assets/spiderman-tobey/movie-02/gallery/image-02.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a data-fancybox="gallery" href="../../src/assets/spiderman-tobey/movie-02/gallery/image-03-full.png">
+                            <img src="../../src/assets/spiderman-tobey/movie-02/gallery/image-03.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a data-fancybox="gallery" href="../../src/assets/spiderman-tobey/movie-02/gallery/image-04.jpg">
+                            <img src="../../src/assets/spiderman-tobey/movie-02/gallery/image-04.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <a href="https://www.linkedin.com/in/joaosouza-dev/" target="_blank">linkedin</a>
+        <a href="https://github.com/Dev-JoaoSouza/" target="_blank">github</a>
+        <p>João Dev 2024-2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+</body>
+</html>

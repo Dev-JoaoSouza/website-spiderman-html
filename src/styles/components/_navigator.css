@@ -1,0 +1,47 @@
+.navigator {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navigator:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: var(--secundary-color);
+    position: absolute;
+    z-index: -1;
+}
+
+.navigator .navigator__icon {
+    position: absolute;
+    top: -32px;
+}
+
+.navigator ul {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.navigator ul li a {
+    color: var(--secundary-color);
+    border: solid 2px var(--secundary-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator ul li a:hover,
+.navigator ul li a.active {
+    color: var(--primary-color);
+    background-color: var(--secundary-color);
+}
